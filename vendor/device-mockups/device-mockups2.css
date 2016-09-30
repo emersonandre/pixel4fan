@@ -74,7 +74,7 @@
 
 /* iMac */
 .device-mockup[data-device="imac"] {
-	padding-bottom: 81.230769%;
+	padding-bottom: 50.230769%;
 }
 
 .device-mockup[data-device="imac"] > .device {
@@ -82,7 +82,7 @@
 }
 
 .device-mockup[data-device="imac"] > .device > .screen {
-	top: 8.20707071%; bottom: 31.6919192%; left: 6.61538462%; right: 6.61538462%;
+	top: 8.20707071%; bottom: 31.6919192%; left: 4.61538462%; right: 4.61538462%;
 }
 
 
