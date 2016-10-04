@@ -1,0 +1,15 @@
+ .modal-body{
+        color: dimgrey;
+    }
+.modal-content{
+        color: dimgrey;
+    }
+.modalBack{
+        background-color: transparent;
+        background-image: url("img/bg-pattern.png");
+}
+
+.btmodal{
+     background-color: transparent;
+     color: dimgrey;
+}
