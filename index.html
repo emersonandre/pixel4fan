@@ -7,15 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="PIXEL4FUN">
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>PIXEL4FUN</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/fonts/SOURCECODEPRO-LIGHT.TTF" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -28,18 +27,16 @@
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <style>
         .modal-body{
             color: brown;
         }
         .modal-content{
             color: crimson;
+        }
+        .modalBack{
+           background-color: transparent;
+           background-image: url("img/bg-pattern.png");
         }
     </style>
 
@@ -61,13 +58,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#download">Orçamentos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#features">Features</a>
+                        <a class="page-scroll" href="#features">Serviços</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -79,34 +76,35 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
+                <div class="col-sm-5">
+                    <div class="header-content" >
                         <div class="header-content-inner">
-                            <h1>PIXEL4FAN <br>A sua nova identidade visual passa por aqui!</h1>
+                            <h1 id="FontePers"><b></b>design inovador, moderno,responsivo com profissionalismo e tecnologia!</h1>
                             <a href="#download" class="btn btn-outline btn-xl page-scroll">Começe Agora!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup macbook">
+                <div class="col-sm-7" style="margin-top:25%; !important">
+                       <img src="vendor/device-mockups/imac/imac.png" class="img-responsive" alt="pixel4fan">
+                    <!--<div class="device-container img-responsive" style="margin-top:50%; !important">
+                        <div class="device-mockup macbook " style="margin-top:0px; width:600px; height:407px;">
                             <div class="device">
                                 <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <!-- <img src="#" class="img-responsive" alt=""> -->
+                                    Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
+                                     <img src="vendor/device-mockups/imac/imac.png" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it 
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="download" class="download bg-primary text-center">
+    <section id="download" class="download bg-primary text-center ">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -125,34 +123,34 @@
 
                 <!-- Modal content-->
                 <div class="modal-content">
-                  <div class="modal-header">
+                  <div class="modal-header modalBack">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">PIXEL4FAN</h4>
+                    <h4 class="modal-title">PIXEL4FUN</h4>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body modalBack">
                     <form method="post" action="email.php">
                        <div class="form-group">
                           <label for="nome">Nome:</label>
-                          <input type="nome" class="form-control" id="nome" name="nome"placeholder="Digite seu nome completo">
+                          <input type="nome" class="form-control" id="nome" name="nome"placeholder="Ex:PIXEL4FUN">
                         </div>
                         <div class="form-group">
                           <label for="email">Email:</label>
-                          <input type="email" class="form-control" id="email" name="email" placeholder="digite seu email">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Ex:pixel4fun@pixel4fun.com.br">
                         </div>
                         <div class="form-group">
                           <label for="fone">Telefone:</label>
-                          <input type="fone" class="form-control" id="fone" name="fone" placeholder="(49)8888-8888">
+                          <input type="fone" class="form-control" id="fone" name="fone" placeholder="Ex:(49)8888-8888">
                         </div>
                         <div class="form-group">
-                            <label for="exampleTextarea">Sua Mensagem:</label>
-                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui oque voce precisa"></textarea>
+                            <label for="exampleTextarea">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="6" placeholder="Ex:Preciso de um orçamento..."></textarea>
                           </div>
                         <button type="submit" class="btn btn-success">Enviar Mensagem</button>
                         <button type="reset" value="Limpar" class="btn btn-warning" >Limpar</button>
                       </form>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <div class="modal-footer modalBack">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                   </div>
                 </div>
 
@@ -243,7 +241,7 @@
                     <a href="#"><i class="fa fa-twitter"></i></a>
                 </li>
                 <li class="social-facebook">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/pixel4fun"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li class="social-google-plus">
                     <a href="#"><i class="fa fa-google-plus"></i></a>
@@ -254,7 +252,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
+            <p>&copy; 2016 PIXEL4FUN. All Rights Reserved.</p>
             <ul class="list-inline">
                 <li>
                     <a href="#">Privacy</a>
@@ -270,6 +268,8 @@
     </footer>
 
     <!-- jQuery -->
+    <script type="text/javascript" src="vendor/bootstrap/js/cufon-you.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/Source_Code_Pro_Light_300.font.js"></script>
     <scrip src="vendor/jquery/jquery.js"></scrip>
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -301,6 +301,10 @@
 				}
 			});
 		});
+    </script>
+    <script type="text/javascript">
+         Cufon.replace('#');
+        Cufon.replace('#myModal');
     </script>
 </body>
 
