@@ -1,206 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+/* Global */
+ 
 
-<head>
+img { max-width:100%; }
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+a {
+    -webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+	}
+    
+a:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+    filter: alpha(opacity=50); /* IE7 */
+    opacity: 0.6;
+    text-decoration: none;
+}
 
-    <title>Freelancer - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    #portfolio{
+        background: #363636;
+    }
+#portfoliokkk{
+    border-top:0;
+    background:#c4e17f;
+    background-image:-webkit-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);background-image:-moz-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);background-image:-o-linear-gradient(left,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);background-image:linear-gradient(to right,#c4e17f,#c4e17f 12.5%,#f7fdca 12.5%,#f7fdca 25%,#fecf71 25%,#fecf71 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4)
+}
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+.thumbnails li> .fff .caption { 
+    background:#fff !important; 
+    padding:10px
+}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
-        body {
-            background-image: url("img/bg-pattern.png");
-        }
+/* Page Header */
+.page-header {
+    background: #f9f9f9;
+    margin: -30px -40px 40px;
+    padding: 20px 40px;
+    border-top: 4px solid #ccc;
+    color: #999;
+    text-transform: uppercase;
+}
+    
+.page-header h3 {
+    line-height: 0.88rem;
+    color: #000;
+}
 
-    </style>
-</head>
+ul.thumbnails { 
+    margin-bottom: 0px;
+}
 
-<body id="page-top" class="index">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">
-                <img id="imgtroca" src="img/logo_small_02.png" class="imgtroca img-responsive" style="width:100px; height:25px;" ></a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#" data-toggle="modal" data-target="#myModal">Contato</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+
+/* Thumbnail Box */
+.caption h4 {
+    color: #444;
+}
+
+.caption p {  
+    color: #999;
+}
+
+
+
+/* Carousel Control */
+.control-box {
+    text-align: right;
+    width: 100%;
+}
+.carousel-control{
+    background: #666;
+    border: 0px;
+    border-radius: 0px;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 200;
+    line-height: 18px;
+    opacity: 0.5;
+    padding: 4px 10px 0px;
+    position: static;
+    height: 30px;
+    width: 15px;
+}
+
+
+
+/* Mobile Only */
+@media (max-width: 767px) {
+    .page-header, .control-box {
+        text-align: center;
+    } 
+}
+@media (max-width: 479px) {
+    .caption {
+        word-break: break-all;
+    }
+}
+
+
+li { list-style-type:none;}
+
+::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
+::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+</style>
+
+
+
+<div class="container">
+<div class="col-xs-12">     
+    <div class="carousel slide" id="myCarousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">
+    						<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide1 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide2 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">	
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Praesent commodo</h4>
+									<p>Nullam Condimentum Nibh Etiam Sem</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide3 --> 
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
- <footer>
-        <div class="container">
-            <p>&copy; 2016 PIXEL4FUN. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="#">Privacy</a>
-                </li>
-                <li>
-                    <a href="#">Terms</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </footer>   
-   <div id="myModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header modalBack" align="center">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title" ><img src="img/logo_small_02.png" class="img-responsive"></h4>
-                      </div>
-                      <div class="modal-body modalBack">
-                        <form method="post" action="email.php">
-                           <div class="form-group">
-                               <label for="nome">NOME:</label>
-                               <input type="nome" class="form-control" id="nome" name="nome"placeholder="Ex: PIXEL4FUN">
-                            </div>
-                            <div class="form-group">
-                               <label for="email">EMAIL:</label>
-                               <input type="email" class="form-control" id="email" name="email" placeholder="Ex: pixel4fun@pixel4fun.com.br">
-                            </div>
-                            <div class="form-group">
-                               <label for="fone">TELEFONE:</label>
-                               <input type="fone" class="form-control" id="fone" name="fone" placeholder="Ex: (XX)XXXX-XXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleTextarea">MENSAGEM:</label>
-                                <textarea class="form-control" id="mensagem" name="mensagem" rows="6" placeholder="Ex: Preciso de um orçamento..."></textarea>
-                              </div>
-                            <button type="submit" class="btn btn-outline btn-xl page-scroll btmodal"> ENVIAR MENSAGEM</button>
-                            <button type="reset" class="btn btn-outline btn-xl page-scroll btmodal"> LIMPAR</button>
-                          </form>
-                      </div>
-                      <div class="modal-footer modalBack">
-                            <button class="btn btn-outline btn-xl page-scroll btmodal" data-dismiss="modal">FECHAR</button>
-                      </div>
-                    </div>
-              </div>
-        </div>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+        
+       
+	   <nav>
+			<ul class="control-box pager">
+				<li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+				<li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
+			</ul>
+		</nav>
+	   <!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel -->
+        
+</div><!-- /.col-xs-12 -->          
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
-</body>
-
-</html>
+</div><!-- /.container -->

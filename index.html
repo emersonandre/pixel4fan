@@ -47,6 +47,9 @@
        #imgtroca2{
            display: none;
        }
+       .carImg{
+           align-items: center;
+        }
     </style>
 </head>
 <body id="page-top">
@@ -73,7 +76,7 @@
                         <a class="page-scroll" href="#features">Serviços</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#" onclick="video()">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contato</a>
@@ -233,12 +236,9 @@
             </div>
         </div>
     </section>
-    <section class="cta">
-        <div class="cta-content">
-            <div class="container">
-            </div>
-        </div>
-        <div class="overlay"></div>
+    <hr>
+    <section id="portfolio">
+        
     </section>
     <section id="contact" class="contact bg-primary ">
         <div class="container">
@@ -326,18 +326,26 @@
                   $('#imgtroca2').css("display","none");
                }
             });
-    </script>
+    </script> 
+    <!--Script carrega imagens na Div -->
     <script>
-        function video() {
+        window.onload = function(){
             $.ajax({
                 url: "portfolio.html",
                 cache: false,
                 success: function(html){
-                    $("#page-top").html(html);
+                    $("#portfolio").html(html);
                 },
             });
         }
-    </script>    
+    </script>   
+    <!--Script para transicao de imagens -->
+    <script>
+       $(document).ready(function() {
+            $('.carousel').carousel({
+              interval: 3000
+            })
+          });
+    </script>
 </body>
-
 </html>
