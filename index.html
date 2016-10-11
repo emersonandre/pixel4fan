@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="PIXEL4FUN">
-
+    
+    <link rel="icon" type="image/png" href="img/icon/ico.ico" />
     <title>PIXEL4FUN</title>
 
     <!-- Bootstrap Core CSS -->
@@ -26,27 +27,28 @@
 
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
-    <link href="css/meucss.css" rel="stylesheet">
+    <link href="css/meuCss.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/meucss.css" />
     <style>
-         .modal-body{
+       .modal-body{
             color: dimgrey;
             }
-        .modal-content{
-                color: dimgrey;
+       .modal-content{
+            color: dimgrey;
             }
-        .modalBack{
-                background-color: transparent;
-                background-image: url("img/bg-pattern.png");
+       .modalBack{
+            background-color: transparent;
+            background-image: url("img/bg-pattern.png");
+            }
+       .btmodal{
+            background-color: transparent;
+            color: dimgrey;
         }
-
-        .btmodal{
-             background-color: transparent;
-             color: dimgrey;
-        }
+       #imgtroca2{
+           display: none;
+       }
     </style>
-
 </head>
-
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -57,7 +59,8 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="img/logo_color_full_b_small.png" class="img-responsive" style="margin-top:1px; width:100px; height:25px;" ></a>
+                <img id="imgtroca" src="img/logo_small_01.png" class="imgtroca img-responsive" style="width:100px; height:25px;" >
+                <img id="imgtroca2" src="img/logo_small_02.png" class="imgtroca2 img-responsive" style="width:100px; height:25px;" ></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -114,7 +117,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h3 class="section-heading"><b>Peça seu orçamento agora!</h3>
+                    <h3 class="section-heading"><b>Peça seu orçamento agora!</b></h3>
                     <p>Deixe-nos saber como podemos ajudá-lo(a). Com certeza podemos oferecer a solução certa para seu negócio.</p>
                     <div class="badges">
                         <a href="#download" class="btn btn-primary btn-xl page-scroll" data-toggle="modal" data-target="#myModal">Peça ja seu Orçamento!</a>
@@ -124,44 +127,42 @@
         </div>
         <!-- Trigger the modal with a button -->
             <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
+        <div id="myModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-
                 <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header modalBack" align="center">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title" ><img src="img/logo_color_full_b_small.png" class="img-responsive"></h4>
-                  </div>
-                  <div class="modal-body modalBack">
-                    <form method="post" action="email.php">
-                       <div class="form-group">
-                          <label for="nome">NOME:</label>
-                          <input type="nome" class="form-control" id="nome" name="nome"placeholder="Ex: PIXEL4FUN">
-                        </div>
-                        <div class="form-group">
-                          <label for="email">EMAIL:</label>
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Ex: pixel4fun@pixel4fun.com.br">
-                        </div>
-                        <div class="form-group">
-                          <label for="fone">TELEFONE:</label>
-                          <input type="fone" class="form-control" id="fone" name="fone" placeholder="Ex: (XX)XXXX-XXXX">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleTextarea">MENSAGEM:</label>
-                            <textarea class="form-control" id="mensagem" name="mensagem" rows="6" placeholder="Ex: Preciso de um orçamento..."></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-outline btn-xl page-scroll btmodal"> ENVIAR MENSAGEM</button>
-                        <button type="reset" class="btn btn-outline btn-xl page-scroll btmodal"> LIMPAR</button>
-                      </form>
-                  </div>
-                  <div class="modal-footer modalBack">
-                    <button class="btn btn-outline btn-xl page-scroll btmodal" data-dismiss="modal">FECHAR</button>
-                  </div>
-                </div>
-
+                    <div class="modal-content">
+                      <div class="modal-header modalBack" align="center">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" ><img src="img/logo_color_full_b_small.png" class="img-responsive"></h4>
+                      </div>
+                      <div class="modal-body modalBack">
+                        <form method="post" action="email.php">
+                           <div class="form-group">
+                               <label for="nome">NOME:</label>
+                               <input type="nome" class="form-control" id="nome" name="nome"placeholder="Ex: PIXEL4FUN">
+                            </div>
+                            <div class="form-group">
+                               <label for="email">EMAIL:</label>
+                               <input type="email" class="form-control" id="email" name="email" placeholder="Ex: pixel4fun@pixel4fun.com.br">
+                            </div>
+                            <div class="form-group">
+                               <label for="fone">TELEFONE:</label>
+                               <input type="fone" class="form-control" id="fone" name="fone" placeholder="Ex: (XX)XXXX-XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleTextarea">MENSAGEM:</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="6" placeholder="Ex: Preciso de um orçamento..."></textarea>
+                              </div>
+                            <button type="submit" class="btn btn-outline btn-xl page-scroll btmodal"> ENVIAR MENSAGEM</button>
+                            <button type="reset" class="btn btn-outline btn-xl page-scroll btmodal"> LIMPAR</button>
+                          </form>
+                      </div>
+                      <div class="modal-footer modalBack">
+                            <button class="btn btn-outline btn-xl page-scroll btmodal" data-dismiss="modal">FECHAR</button>
+                      </div>
+                    </div>
               </div>
-            </div>
+        </div>
     </section>
 
     <section id="features" class="features modalBack">
@@ -182,7 +183,8 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/screen.jpeg" class="img-responsive" alt=""> </div>
+                                    <img src="img/screen.jpeg" class="img-responsive" alt="">
+                                </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
@@ -232,8 +234,6 @@
     <section class="cta">
         <div class="cta-content">
             <div class="container">
-                <h2>Stop waiting.<br>Start building.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
             </div>
         </div>
         <div class="overlay"></div>
@@ -287,6 +287,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+    <!--Envia dados do formulario por Json -->
     <script>
 		$("#btnEnviar").click(function(){
 			$.ajax({
@@ -308,10 +309,25 @@
 			});
 		});
     </script>
+    <!--Replace na fonte dA DIV especificada -->
     <script type="text/javascript">
-         Cufon.replace('#');
+        Cufon.replace('#');
         Cufon.replace('#myModal');
     </script>
+    <!-- Script para trocar imagen do cabeçalho(logo) no ralar a pagina-->
+    <script>
+        $(window).scroll(function() {
+               var scroll = $(window).scrollTop();
+
+               if (scroll > 15) {
+                  $('#imgtroca2').css("display","block");
+                  $('#imgtroca').css("display","none");
+               } else {
+                  $('#imgtroca').css("display","block");
+                  $('#imgtroca2').css("display","none");
+               }
+            });
+        </script>
 </body>
 
 </html>
