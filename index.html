@@ -73,6 +73,9 @@
                         <a class="page-scroll" href="#features">Serviços</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#" onclick="video()">Portfolio</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contato</a>
                     </li>
                 </ul>
@@ -81,7 +84,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
     <header>
         <div class="container">
             <div class="row">
@@ -229,8 +231,8 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-
     <section class="cta">
         <div class="cta-content">
             <div class="container">
@@ -238,7 +240,6 @@
         </div>
         <div class="overlay"></div>
     </section>
-
     <section id="contact" class="contact bg-primary ">
         <div class="container">
             <h2>We <i class="fa fa-heart"></i> new friends!</h2>
@@ -255,7 +256,6 @@
             </ul>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <p>&copy; 2016 PIXEL4FUN. All Rights Reserved.</p>
@@ -272,7 +272,6 @@
             </ul>
         </div>
     </footer>
-
     <!-- jQuery -->
     <script type="text/javascript" src="vendor/bootstrap/js/cufon-you.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/js/Source_Code_Pro_Light_300.font.js"></script>
@@ -327,7 +326,18 @@
                   $('#imgtroca2').css("display","none");
                }
             });
-        </script>
+    </script>
+    <script>
+        function video() {
+            $.ajax({
+                url: "portfolio.html",
+                cache: false,
+                success: function(html){
+                    $("#page-top").html(html);
+                },
+            });
+        }
+    </script>    
 </body>
 
 </html>
