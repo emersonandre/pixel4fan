@@ -1,0 +1,27 @@
+/* Global */
+img { max-width:100%;}
+a {
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease; 
+    }
+a:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+    filter: alpha(opacity=50); /* IE7 */
+    opacity: 0.6;
+    text-decoration: none;
+    }
+#portfolio{
+    background: #363636;
+    /*background-image: url(img/bg-pattern.png);*/
+    }
+.imgExpande img:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transition: 1s all ease; /* É para pega no Chrome e Safira */
+    -moz-transition: 1s all ease; /* Firefox */
+    -o-transition: 1s all ease; /* Opera */
+    }
