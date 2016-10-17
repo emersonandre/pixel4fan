@@ -13,10 +13,7 @@ a:hover {
     opacity: 0.6;
     text-decoration: none;
     }
-#portfolio{
-    background: #363636;
-    /*background-image: url(img/bg-pattern.png);*/
-    }
+
 .imgExpande img:hover {
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
